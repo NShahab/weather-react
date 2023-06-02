@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#
+deployed on netlify
+https://ornate-cuchufli-b5227a.netlify.app/
 
 ## Available Scripts
 
