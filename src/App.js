@@ -1,26 +1,32 @@
-import "./App.css";
+import React from "react";
 import Weather from "./Weather";
-import { InfinitySpin } from "react-loader-spinner";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <div class="container">
-        <h1>Weather App</h1>
+      <div className="container">
+        <Weather defaultCity="New York" />
 
-        <Weather />
-        <InfinitySpin
-          height="80"
-          width="80"
-          radius="9"
-          color="green"
-          ariaLabel="three-dots-loading"
-          wrapperStyle
-          wrapperClass
-        />
+        <footer>
+          This project was coded by Nahid Shahab and is{" "}
+          <a
+            href="https://github.com/NShahab/weather-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href=" https://ornate-cuchufli-b5227a.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
       </div>
     </div>
   );
 }
-
-export default App;
